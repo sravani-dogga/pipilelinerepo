@@ -1,6 +1,6 @@
 // Powered by Infostretch 
 
-timestamps {
+//timestamps {
 
 node () {
 
@@ -15,4 +15,26 @@ mvn clean package
  """ 
 	}
 }
+}//
+
+pipeline {
+    agent any 
+    stages {
+        stage('checkout') { 
+            steps {
+                echo "checking remote repo"
+git changelog:false, credentials:"scriptedpipeline",pull:false,url:"https://github.com/sravani-dogga/pipilelinerepo.git"
+            }
+        }
+        stage('Test') { 
+            steps {
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
+            }
+        }
+    }
 }
