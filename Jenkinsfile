@@ -10,11 +10,18 @@ git changelog:false, credentialsId: "newuser", poll:false, url:"https://github.c
         stage('Test') { 
             steps {
                 echo "build stage"
+sh***
+ls -ltr
+mvn clean package
+***
             }
         }
         stage('Deploy') { 
             steps {
                echo "deploy stage"
+sh***
+echo $WORKSPACE
+***
             }
         }
     }
