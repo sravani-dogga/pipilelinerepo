@@ -10,7 +10,9 @@ node () {
 	stage ('srcriptedjob - Build') {
  			// Shell build step
 sh """ 
-echo $WORKSPACE 
+echo $WORKSPACE
+mvn clean package
+ls -ltr $WORKSPACE-target 
  """ 
 	}
 }
