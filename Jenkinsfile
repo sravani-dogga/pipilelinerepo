@@ -11,8 +11,7 @@ node () {
  			// Shell build step
 sh """ 
 echo $WORKSPACE
-mvn clean package
-ls -ltr $WORKSPACE-target 
+mvn clean package 
  """ 
 	}
 }
