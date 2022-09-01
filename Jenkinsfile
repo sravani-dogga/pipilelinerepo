@@ -16,6 +16,7 @@ git changelog:false, credentialsId: "newuser", poll:false, url:"https://github.c
         stage('Deploy') { 
             steps {
                echo "deploy stage"
+mvn clean package
             }
         }
     }
