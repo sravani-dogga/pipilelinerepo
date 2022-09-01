@@ -7,17 +7,21 @@ pipeline {
 git changelog:false, credentialsId: "newuser", poll:false, url:"https://github.com/sravani-dogga/pipilelinerepo.git" 
             }
         }
-        stage('Test') { 
+        stage('Build') { 
             steps {
                 echo "build stage"
+sh ***
+ls -ltr
+which mvn
+mvn clean package
+***
 
             }
         }
         stage('Deploy') { 
             steps {
                echo "deploy stage"
-mvn clean package
-            }
-        }
+}
+     }
     }
 }
