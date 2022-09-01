@@ -4,7 +4,7 @@ pipeline {
         stage('checkout') { 
             steps {
                 echo "checking put repository"
-git changelog:false, credentialsID: "newuser", poll:false, url:"https://github.com/sravani-dogga/pipilelinerepo.git" 
+git changelog:false, credentialsId: "newuser", poll:false, url:"https://github.com/sravani-dogga/pipilelinerepo.git" 
             }
         }
         stage('Test') { 
