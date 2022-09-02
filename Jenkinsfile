@@ -10,11 +10,7 @@ git changelog:false, credentialsId: "newuser", poll:false, url:"https://github.c
         stage('Build') { 
             steps {
                 echo "build stage"
-sh ***
-ls -ltr
-which mvn
-mvn clean package
-***
+                sh 'mvn clean package'
 
             }
         }
