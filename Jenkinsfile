@@ -17,7 +17,7 @@ git changelog:false, credentialsId: "newuser", poll:false, url:"https://github.c
         stage('Deploy') { 
             steps {
                echo "deploy stage"
-               sh 'cp -rp $WORKSPACE /target/hello-world-maven.war /opt/tomcat9/webapps'
+               sh 'cp -rp $WORKSPACE /target/hello-world-maven.war /opt/tomcat/webapps'
 }
      }
     }
