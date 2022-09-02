@@ -9,7 +9,7 @@ git changelog:false, credentialsId: "newuser", poll:false, url:"https://github.c
         }
         stage('Build') { 
             steps {
-                echo "build stage"
+                echo "build stage is commited"
                 sh 'mvn clean package'
 
             }
