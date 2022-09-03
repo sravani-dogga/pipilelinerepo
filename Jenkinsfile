@@ -21,10 +21,6 @@ mvn clean package
 stage('deploy'){
 steps{
 echo 'deplay stage'
-sh """
-echo $WORKSPACE
-cp -rp $WORKSPACE/target/hello-world-maven.war /opt/tomcat/webapps
-"""
 }
 }
 }
