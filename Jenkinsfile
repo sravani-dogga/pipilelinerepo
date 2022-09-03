@@ -23,7 +23,7 @@ steps{
 echo 'deplay stage'
 sh """
 echo $WORKSPACE
-cp -rp $WORKSPACE/target/hello-world-maven.war /opt/tomcat9/webapps
+cp -rp $WORKSPACE/target/hello-world-maven.war /opt/tomcat/webapps
 """
 }
 }
