@@ -21,9 +21,6 @@ mvn clean package
 stage('deploy'){
 steps{
 echo 'deplay stage'
-sh """
-ls -ltr $WORKSPACE-target
-"""
 }
 }
 }
