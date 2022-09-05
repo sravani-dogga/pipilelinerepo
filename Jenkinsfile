@@ -18,7 +18,7 @@ mvn clean package
 """
 }
 }
-stage('deploy'){
+stage('deploy stage'){
 steps{
 echo 'deplay stage'
 sh """
