@@ -23,6 +23,7 @@ steps{
 echo 'deplay stage'
 sh """
 echo $WORKSPACE
+"""
 }
 }
 }
