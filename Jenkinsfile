@@ -20,7 +20,7 @@ mvn clean package
 }
 stage('deploy'){
 steps{
-echo 'deplay stage is created'
+echo 'deplay stage'
 }
 }
 }
